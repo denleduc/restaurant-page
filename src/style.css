@@ -13,6 +13,7 @@ body {
 
 header {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .siteName {
