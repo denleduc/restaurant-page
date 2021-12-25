@@ -1,0 +1,20 @@
+* {
+    border: 1px solid red;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+}
+
+.siteName {
+    color: blue;
+}

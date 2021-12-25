@@ -1,8 +1,5 @@
 const page = document.querySelector('#pageContainer');
+import renderHeader from "./header";
+import './style.css';
 
-//Test
-const newH1 = document.createElement('h1');
-newH1.innerText = 'Hello world';
-newH1.style.color = 'red';
-
-page.appendChild(newH1);
+page.appendChild(renderHeader());
