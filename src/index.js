@@ -7,3 +7,8 @@ import './style.css';
 page.appendChild(renderHeader());
 page.appendChild(renderPresentation());
 document.body.appendChild(renderFooter());
+
+const test = document.querySelector('.specificBtn');
+test.addEventListener('click', () => {
+    console.log('button clicked');
+});
