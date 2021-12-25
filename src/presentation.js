@@ -1,4 +1,8 @@
 export default function renderPresentation() {
     const container = document.createElement('div');
-    container.classList.add('main');
+    container.classList.add('main', 'visible');
+
+    
+
+    return container;
 }

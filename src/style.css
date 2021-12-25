@@ -19,3 +19,11 @@ header {
 .siteName {
     color: blue;
 }
+
+.visible {
+    display: flex;
+}
+
+.invisible {
+    display: none;
+}
