@@ -1,0 +1,25 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "A restaurant page created while following TOP.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bussun/restaurant-page.git"
+  },
+  "author": "Bussun",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Bussun/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/Bussun/restaurant-page#readme",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
