@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector("#pageContainer"),n=document.createElement("h1");n.innerText="Hello world",n.style.color="red",e.appendChild(n)})();
