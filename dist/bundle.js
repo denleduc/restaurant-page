@@ -110,6 +110,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderAbout)\n/* harmony export */ });\nfunction renderAbout() {\r\n    const container = document.createElement('div');\r\n    container.classList.add('about', 'invisible');\r\n    container.innerText = 'About section';\r\n\r\n    return container;\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
+
+/***/ }),
+
 /***/ "./src/footer.js":
 /*!***********************!*\
   !*** ./src/footer.js ***!
@@ -126,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderHeader)\n/* harmony export */ });\nfunction renderHeader() {\r\n    const container = document.createElement('header');\r\n\r\n    //Site name / logo\r\n    const siteName = document.createElement('p');\r\n    siteName.innerText = 'SlowFood';\r\n    siteName.classList.add('siteName');\r\n    container.appendChild(siteName);\r\n\r\n\r\n    //Menu\r\n    const navMenu = document.createElement('div');\r\n    const item1 = document.createElement('button');\r\n    item1.classList.add('specificBtn');\r\n    item1.innerText = 'Presentation';\r\n    const item2 = document.createElement('button');\r\n    item2.innerText = 'Menu';\r\n    const item3 = document.createElement('button');\r\n    item3.innerText = 'About us';\r\n    navMenu.appendChild(item1);\r\n    navMenu.appendChild(item2);\r\n    navMenu.appendChild(item3);\r\n    container.appendChild(navMenu);\r\n\r\n    return container;\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderHeader)\n/* harmony export */ });\nfunction renderHeader() {\r\n    const container = document.createElement('header');\r\n\r\n    //Site name / logo\r\n    const siteName = document.createElement('p');\r\n    siteName.innerText = 'SlowFood';\r\n    siteName.classList.add('siteName');\r\n    container.appendChild(siteName);\r\n\r\n\r\n    //Menu\r\n    const navMenu = document.createElement('div');\r\n\r\n    const item1 = document.createElement('button');\r\n    item1.classList.add('presBtn');\r\n    item1.innerText = 'Presentation';\r\n\r\n    const item2 = document.createElement('button');\r\n    item2.classList.add('menuBtn');\r\n    item2.innerText = 'Menu';\r\n\r\n    const item3 = document.createElement('button');\r\n    item3.classList.add('aboutBtn');\r\n    item3.innerText = 'About us';\r\n    \r\n    navMenu.appendChild(item1);\r\n    navMenu.appendChild(item2);\r\n    navMenu.appendChild(item3);\r\n    container.appendChild(navMenu);\r\n\r\n    return container;\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/header.js?");
 
 /***/ }),
 
@@ -136,7 +146,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _presentation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./presentation */ \"./src/presentation.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\nconst page = document.querySelector('#pageContainer');\r\n\r\n\r\n\r\n\r\n\r\npage.appendChild((0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\npage.appendChild((0,_presentation__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\r\ndocument.body.appendChild((0,_footer__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\r\n\r\nconst test = document.querySelector('.specificBtn');\r\ntest.addEventListener('click', () => {\r\n    console.log('button clicked');\r\n});\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _presentation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./presentation */ \"./src/presentation.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\nconst page = document.querySelector('#pageContainer');\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\npage.appendChild((0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\npage.appendChild((0,_presentation__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\r\npage.appendChild((0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\r\npage.appendChild((0,_about__WEBPACK_IMPORTED_MODULE_3__[\"default\"])());\r\ndocument.body.appendChild((0,_footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"])());\r\n\r\n\r\n//Tab switching code\r\nconst presBtn = document.querySelector('.presBtn');\r\npresBtn.addEventListener('click', () => {\r\n    console.log('pres button clicked');\r\n});\r\n\r\nconst menuBtn = document.querySelector('.menuBtn');\r\nmenuBtn.addEventListener('click', () => {\r\n    console.log('menu button clicked');\r\n});\r\n\r\nconst aboutBtn = document.querySelector('.aboutBtn');\r\naboutBtn.addEventListener('click', () => {\r\n    console.log('about button clicked');\r\n});\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderMenu)\n/* harmony export */ });\nfunction renderMenu() {\r\n    const container = document.createElement('div');\r\n    container.innerText = 'Menu section';\r\n\r\n    return container;\r\n}\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ }),
 
