@@ -10,17 +10,16 @@ export default function renderHeader() {
 
     //Menu
     const navMenu = document.createElement('div');
-    const menu = document.createElement('ul');
-    const item1 = document.createElement('li');
-    item1.innerHTML = '<a href="#" class="menuLink">Presentation</a>';
-    const item2 = document.createElement('li');
-    item2.innerHTML = '<a href="#" class="menuLink">Menu</a>';
-    const item3 = document.createElement('li');
-    item3.innerHTML = '<a href="#" class="menuLink">About us</a>';
-    menu.appendChild(item1);
-    menu.appendChild(item2);
-    menu.appendChild(item3);
-    navMenu.appendChild(menu);
+    const item1 = document.createElement('button');
+    item1.classList.add('specificBtn');
+    item1.innerText = 'Presentation';
+    const item2 = document.createElement('button');
+    item2.innerText = 'Menu';
+    const item3 = document.createElement('button');
+    item3.innerText = 'About us';
+    navMenu.appendChild(item1);
+    navMenu.appendChild(item2);
+    navMenu.appendChild(item3);
     container.appendChild(navMenu);
 
     return container;
