@@ -12,19 +12,44 @@ page.appendChild(renderMenu());
 page.appendChild(renderAbout());
 document.body.appendChild(renderFooter());
 
+//Getting elements after they have been created
+const menuBtn = document.querySelector('.menuBtn');
+const aboutBtn = document.querySelector('.aboutBtn');
+const presBtn = document.querySelector('.presBtn');
+const presTab = document.querySelector('.main');
+const aboutTab = document.querySelector('.about');
+const menuTab = document.querySelector('.menu');
 
 //Tab switching code
-const presBtn = document.querySelector('.presBtn');
 presBtn.addEventListener('click', () => {
-    console.log('pres button clicked');
+    menuTab.classList.remove('visible');
+    menuTab.classList.add('invisible');
+
+    aboutTab.classList.remove('visible');
+    aboutTab.classList.add('invisible');
+
+    presTab.classList.remove('invisible');
+    presTab.classList.add('visible');
 });
 
-const menuBtn = document.querySelector('.menuBtn');
 menuBtn.addEventListener('click', () => {
-    console.log('menu button clicked');
+    menuTab.classList.remove('invisible');
+    menuTab.classList.add('visible');
+
+    aboutTab.classList.remove('visible');
+    aboutTab.classList.add('invisible');
+
+    presTab.classList.remove('visible');
+    presTab.classList.add('invisible');
 });
 
-const aboutBtn = document.querySelector('.aboutBtn');
 aboutBtn.addEventListener('click', () => {
-    console.log('about button clicked');
+    menuTab.classList.remove('visible');
+    menuTab.classList.add('invisible');
+
+    aboutTab.classList.remove('invisible');
+    aboutTab.classList.add('visible');
+
+    presTab.classList.remove('visible');
+    presTab.classList.add('invisible');
 });
