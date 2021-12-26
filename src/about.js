@@ -8,13 +8,16 @@ export default function renderAbout() {
 
 
     //Credits
+    const creditsContainer = document.createElement('div');
+    creditsContainer.classList.add('creditsContainer');
     const credits = document.createElement('p');
     credits.innerHTML = 'Restaurant photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/s/photos/restaurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>' +
                         'Cantarell font downloaded on Google Fonts. Licensed under the SIL Open Font License, Version 1.1';
-    container.appendChild(credits);
+    creditsContainer.appendChild(credits);
     const licenseText = document.createElement('p');
     licenseText.innerText = license;
-    container.appendChild(licenseText);
+    creditsContainer.appendChild(licenseText);
 
+    container.appendChild(creditsContainer);
     return container;
 }
