@@ -70,7 +70,7 @@ header {
 .main {
     align-self: center;
     justify-content: center;
-    width: 60vw;
+    margin: 5vh 0 5vh 0;
 }
 
 .presDiv {
@@ -78,6 +78,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 60vw;
 }
 
 .restaurantDesc {

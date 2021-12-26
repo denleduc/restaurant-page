@@ -32,6 +32,11 @@ export default function renderPresentation() {
     
     mainDiv.appendChild(restaurantDesc);
 
+    const exploreText = document.createElement('p');
+    exploreText.classList.add('restaurantDesc');
+    exploreText.innerText = 'Feel free to explore our website to discover our dishes, our history and our location!';
+    mainDiv.appendChild(exploreText);
+
     container.appendChild(mainDiv);
     return container;
 }
