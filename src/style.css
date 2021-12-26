@@ -5,6 +5,15 @@
     font-family: 'Cantarell';
 }
 
+header,
+footer,
+.presDiv,
+.mainDishes,
+.dessertsDishes,
+.otherDishes {
+    background: rgba(255, 255, 255, 0.8);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -15,11 +24,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: url(./background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #pageContainer {
     display: flex;
     flex-direction: column;
+    background: none;
 }
 
 header {
@@ -27,12 +40,31 @@ header {
     justify-content: space-evenly;
 }
 
+.nav {
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    font-size: 1.2em;
+    background-color: blue;
+}
+
+.btn:hover {
+    color:whitesmoke;
+}
+
 .siteName {
     color: blue;
 }
 
 .main {
+    align-self: center;
     justify-content: center;
+    width: 60vw;
 }
 
 .presDiv {
@@ -42,8 +74,19 @@ header {
     align-items: center;
 }
 
+.restaurantDesc {
+    text-align: center;
+}
+
 .menu {
     flex-direction: column;
+}
+
+.txtContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .dish {
@@ -51,19 +94,29 @@ header {
     height: 300px;
 }
 
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainDishes,
+.dessertsDishes,
+.otherDishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    width: 60vw;
+    padding: 1vw;
+}
 
 .about {
     flex-direction: column;
     align-items: center;
 }
 
-.mainDishes,
-.dessertsDishes,
-.otherDishes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5vw;
-}
 
 .creditsContainer {
     padding: 2vw;
@@ -83,4 +136,13 @@ footer {
 
 .invisible {
     display: none;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
+.em {
+    font-size: 1.1em;
+    font-weight: 500;
 }

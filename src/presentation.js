@@ -25,6 +25,7 @@ export default function renderPresentation() {
     mainDiv.appendChild(imgDesc);
 
     const restaurantDesc = document.createElement('p');
+    restaurantDesc.classList.add('restaurantDesc');
     restaurantDesc.innerText = 'Welcome to our restaurant! Here, you\'ll take ' + 
                                'all the time you need to eat and enjoy our dishes!' +
                                ' As our name says, we\'re the exact opposite of your favorite fast-food!';

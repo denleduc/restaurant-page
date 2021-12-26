@@ -12,7 +12,8 @@ export default function renderAbout() {
     creditsContainer.classList.add('creditsContainer');
     const credits = document.createElement('p');
     credits.innerHTML = 'Restaurant photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/s/photos/restaurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>' +
-                        'Cantarell font downloaded on Google Fonts. Licensed under the SIL Open Font License, Version 1.1';
+                        'Photo by <a href="https://unsplash.com/@zachephoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zachary Edmundson</a> on <a href="https://unsplash.com/s/photos/city?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>' +
+                        'Cantarell font from Google Fonts. Licensed under the SIL Open Font License, Version 1.1';
     creditsContainer.appendChild(credits);
     const licenseText = document.createElement('p');
     licenseText.innerText = license;

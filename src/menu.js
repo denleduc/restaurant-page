@@ -6,6 +6,7 @@ export default function renderMenu() {
     
     //Top text
     const textContainer = document.createElement('div');
+    textContainer.classList.add('txtContainer');
 
     const topText = document.createElement('p');
     topText.classList.add('topText');
@@ -14,7 +15,7 @@ export default function renderMenu() {
 
     const subtitle = document.createElement('p');
     subtitle.classList.add('subtText');
-    subtitle.innerText = 'Take a look at the dishes you can find in our restaurant!';
+    subtitle.innerText = 'Take a look at the dishes you can order in our restaurant!';
     textContainer.appendChild(subtitle);
 
     container.appendChild(textContainer);
