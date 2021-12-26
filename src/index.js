@@ -21,6 +21,14 @@ const aboutTab = document.querySelector('.about');
 const menuTab = document.querySelector('.menu');
 
 //Tab switching code
+
+/* 
+TODO: (I read it after having finished my tab logic)
+Write the tab-switching logic inside of index.js. You should have event listeners
+for each tab that wipes out the current contents and then runs the correct ‘tab module’
+to populate it again.
+*/
+
 presBtn.addEventListener('click', () => {
     menuTab.classList.remove('visible');
     menuTab.classList.add('invisible');
