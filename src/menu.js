@@ -23,65 +23,12 @@ export default function renderMenu() {
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menuContainer');
 
-    //Main dishes
+    //Adding dishes from JSON to container
     const mainDishesContainer = document.createElement('div');
-    dishes["Main dishes"].forEach(dish => {
-        const dishDiv = document.createElement('div');
-        dishDiv.classList.add('dish');
-
-        //Dish name
-        const dishName = document.createElement('p');
-        dishName.innerText = dish.name;
-        dishDiv.appendChild(dishName);
-
-        //Dish description
-        const dishDesc = document.createElement('p');
-        dishDesc.innerText = dish.description;
-        dishDiv.appendChild(dishDesc);
-
-        //Ingredients
-        const dishIngredients = document.createElement('p');
-        dishIngredients.innerText = 'Ingredients: ';
-        dish.ingredients.forEach(ingredient => {
-            dishIngredients.innerText += ingredient + ' | ';
-        });
-        dishDiv.appendChild(dishIngredients);
-
-        mainDishesContainer.appendChild(dishDiv);
-    });
-    menuContainer.appendChild(mainDishesContainer);
-
-    //Desserts
     const dessertsContainer = document.createElement('div');
-    dishes["Desserts"].forEach(dish => {
-        const dishDiv = document.createElement('div');
-        dishDiv.classList.add('dish');
-
-        //Dish name
-        const dishName = document.createElement('p');
-        dishName.innerText = dish.name;
-        dishDiv.appendChild(dishName);
-
-        //Dish description
-        const dishDesc = document.createElement('p');
-        dishDesc.innerText = dish.description;
-        dishDiv.appendChild(dishDesc);
-
-        //Ingredients
-        const dishIngredients = document.createElement('p');
-        dishIngredients.innerText = 'Ingredients: ';
-        dish.ingredients.forEach(ingredient => {
-            dishIngredients.innerText += ingredient + ' | ';
-        });
-        dishDiv.appendChild(dishIngredients);
-
-        dessertsContainer.appendChild(dishDiv);
-    });
-    menuContainer.appendChild(dessertsContainer);
-
-    //Others
     const otherContainer = document.createElement('div');
-    dishes["Others"].forEach(dish => {
+
+    dishes["Dishes"].forEach(dish => {
         const dishDiv = document.createElement('div');
         dishDiv.classList.add('dish');
 
@@ -103,9 +50,26 @@ export default function renderMenu() {
         });
         dishDiv.appendChild(dishIngredients);
 
-        otherContainer.appendChild(dishDiv);
+        switch (dish.type) {
+            case 'main':
+                mainDishesContainer.appendChild(dishDiv);
+                break;
+            
+            case 'dessert':
+                dessertsContainer.appendChild(dishDiv);
+                break;
+
+            case 'other':
+            default:
+                otherContainer.appendChild(dishDiv);
+                break;
+        }
     });
+
+    menuContainer.appendChild(mainDishesContainer);
+    menuContainer.appendChild(dessertsContainer);
     menuContainer.appendChild(otherContainer);
+
 
     container.appendChild(menuContainer);
     return container;

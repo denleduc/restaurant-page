@@ -1,14 +1,16 @@
 {
-    "Main dishes" : [
+    "Dishes": [
         {
             "name": "Basil and garam masala bread",
             "description" : "Fluffy bread made with fresh basil and garam masala",
+            "type": "main",
             "ingredients": [
                 "flour", "salt", "yeast", "butter", "water", "onions", "basil", "garam masala"
             ]
         },
         {
             "name": "Aubergine and pesto lasagne",
+            "type": "main",
             "description" : "Layers of fresh egg pasta interspersed with fresh aubergine and red pesto",
             "ingredients": [
                 "tomato", "passata", "onion", "garlic", "pasta", "oregano", "black pepper", "basil", "aubergine", "pesto"
@@ -16,6 +18,7 @@
         },
         {
             "name": "Beef and squash lasagne",
+            "type": "main",
             "description" : "Layers of fresh egg pasta interspersed with beef and acorn squash",
             "ingredients": [
                 "tomato", "passata", "onion", "garlic", "pasta", "oregano", "black pepper", "basil", "beef", "squash"
@@ -23,6 +26,7 @@
         },
         {
             "name": "Pepper and cheese lasagne",
+            "type": "main",
             "description" : "Layers of fresh egg pasta interspersed with green pepper and mature cheese",
             "ingredients": [
                 "tomato", "passata", "onion", "garlic", "pasta", "oregano", "black pepper", "basil", "pepper", "cheese"
@@ -30,15 +34,15 @@
         },
         {
             "name": "Red onion salad with basil dressing",
+            "type": "main",
             "description": "A mouth-watering red onion salad served with basil dressing",
             "ingredients": [
                 "cucumber", "lettuce", "cress", "red onion", "basil"
             ]
-        }
-    ],
-    "Desserts": [
+        },
         {
             "name": "Pumpkin and sugar cake",
+            "type": "dessert",
             "description": "Rich cake made with fresh pumpkin and caster sugar",
             "ingredients": [
                 "flour", "butter", "egg", "sugar", "pumpkin"
@@ -46,6 +50,7 @@
         },
         {
             "name": "Almond and cinnamon muffins",
+            "type": "dessert",
             "description": "Rich muffins made with toasted almond and cinnamon",
             "ingredients": [
                 "flour", "butter", "egg", "sugar", "almond", "cinnamon"
@@ -53,6 +58,7 @@
         },
         {
             "name": "Apple and banana buns",
+            "type": "dessert",
             "description": "Moist buns made with dessert apple and fresh banana",
             "ingredients": [
                 "flour", "butter", "egg", "sugar", "apple", "banana"
@@ -60,15 +66,15 @@
         },
         {
             "name": "Apple and banana crepes",
+            "type": "dessert",
             "description": "Fluffy crepes filled with fresh apple and banana",
             "ingredients": [
                 "flour", "butter", "egg", "milk", "apple", "banana"
             ]
-        }
-    ],
-    "Others": [
+        },
         {
             "name": "Coffee",
+            "type": "other",
             "description": "A coffee from the best producers",
             "ingredients": [
                 "coffee"
