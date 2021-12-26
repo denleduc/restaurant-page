@@ -23,6 +23,14 @@ module.exports = {
                 test: /\.(ttf|otf)$/i,
                 type: 'asset/resource',
             },
+            {
+                test: /\.txt$/i,
+                use: 'raw-loader',
+            },
+            {
+                test: /\.ttf$/i,
+                type: 'asset/resource',
+            },
         ]
     },
 }
