@@ -1,4 +1,5 @@
 import license from './OFL.txt';
+import kitchenImg from './kitchen.jpg';
 
 export default function renderAbout() {
     const container = document.createElement('div');
@@ -12,6 +13,17 @@ export default function renderAbout() {
     topText.classList.add('topText');
     topText.innerText = 'About us';
     aboutContainer.appendChild(topText);
+
+    const aboutUsTxt = document.createElement('p');
+    aboutUsTxt.innerText = 'Since we opened in 1974, we only dreamed of one thing: making people appreciate what they eat. ' +
+                           'And we think we are actually succeeding! In our restaurant, you\'ll find many different dishes ' +
+                           'and we are sure that at you\'ll like at least one!';
+    aboutContainer.appendChild(aboutUsTxt);
+
+    const kitchen = new Image();
+    kitchen.src = kitchenImg;
+    kitchen.classList.add('kitchenImg');
+    aboutContainer.appendChild(kitchen);
 
 
     //Credits

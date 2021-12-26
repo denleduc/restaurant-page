@@ -168,11 +168,16 @@ header {
     width: 60vw;
 }
 
+.kitchenImg {
+    width: 35vw;
+    height: auto;
+}
 
 .creditsContainer {
     padding: 2vw;
     border-radius: 10px;
 }
+
 footer {
     display: flex;
     justify-content: center;
