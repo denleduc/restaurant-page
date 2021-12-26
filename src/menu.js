@@ -38,16 +38,19 @@ export default function renderMenu() {
 
         //Dish name
         const dishName = document.createElement('p');
+        dishName.classList.add('dishName');
         dishName.innerText = dish.name;
         dishDiv.appendChild(dishName);
 
         //Dish description
         const dishDesc = document.createElement('p');
+        dishDesc.classList.add('dishDesc');
         dishDesc.innerText = dish.description;
         dishDiv.appendChild(dishDesc);
 
         //Ingredients
         const dishIngredients = document.createElement('p');
+        dishIngredients.classList.add('dishIngredients');
         dishIngredients.innerText = 'Ingredients: ';
         dish.ingredients.forEach(ingredient => {
             dishIngredients.innerText += ingredient + ' | ';

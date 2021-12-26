@@ -7,10 +7,13 @@
 header,
 footer,
 .presDiv,
+.txtContainer,
 .mainDishes,
 .dessertsDishes,
-.otherDishes {
+.otherDishes,
+.about {
     background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
 }
 
 html {
@@ -48,8 +51,10 @@ header {
 
 .btn {
     border: none;
+    padding: .3vw .5vw .3vw .5vw;
     font-size: 1.2em;
-    background-color: blue;
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 10px;
 }
 
 .btn:hover {
@@ -81,6 +86,10 @@ header {
 
 .menu {
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5vh;
+    padding: 1vw;
 }
 
 .txtContainer {
@@ -88,11 +97,27 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 60vw;
 }
 
 .dish {
     width: 250px;
     height: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease .05s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.dish:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.01);
 }
 
 .menuContainer {
@@ -100,6 +125,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5vh;
 }
 .mainDishes,
 .dessertsDishes,
@@ -111,18 +137,20 @@ header {
     gap: 5vw;
     width: 60vw;
     padding: 1vw;
+    border-radius: 20px;
 }
 
 .about {
+    align-self: center;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 60vw;
 }
 
 
 .creditsContainer {
     padding: 2vw;
-    background-color: black;
-    color: white;
     border-radius: 10px;
 }
 footer {
@@ -146,4 +174,24 @@ footer {
 .em {
     font-size: 1.1em;
     font-weight: 500;
+}
+
+.topText {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.dishName {
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.dishDesc {
+    font-style: italic;
+    color:silver;
+}
+
+.dishIngredients {
+
 }
