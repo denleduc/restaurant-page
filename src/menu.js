@@ -25,8 +25,11 @@ export default function renderMenu() {
 
     //Adding dishes from JSON to container
     const mainDishesContainer = document.createElement('div');
+    mainDishesContainer.classList.add('mainDishes');
     const dessertsContainer = document.createElement('div');
+    dessertsContainer.classList.add('dessertsDishes');
     const otherContainer = document.createElement('div');
+    otherContainer.classList.add('otherDishes');
 
     dishes["Dishes"].forEach(dish => {
         const dishDiv = document.createElement('div');

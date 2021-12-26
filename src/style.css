@@ -28,6 +28,30 @@ header {
     color: blue;
 }
 
+.main {
+    justify-content: center;
+}
+
+.presDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    flex-direction: column;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .visible {
     display: flex;
 }

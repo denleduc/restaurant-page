@@ -24,6 +24,13 @@ export default function renderPresentation() {
     imgDesc.classList.add('small');
     mainDiv.appendChild(imgDesc);
 
+    const restaurantDesc = document.createElement('p');
+    restaurantDesc.innerText = 'Welcome to our restaurant! Here, you\'ll take ' + 
+                               'all the time you need to eat and enjoy our dishes!' +
+                               ' As our name says, we\'re the exact opposite of your favorite fast-food!';
+    
+    mainDiv.appendChild(restaurantDesc);
+
     container.appendChild(mainDiv);
     return container;
 }
