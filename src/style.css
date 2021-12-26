@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
 
 * {
     font-family: 'Cantarell';
@@ -13,7 +14,8 @@ footer,
 .dessertsDishes,
 .otherDishes,
 .about {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(0,0,0, 0.5);
+    color: #FFF;
     border-radius: 20px;
 }
 
@@ -21,6 +23,9 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    color: #FEE;
+}
 body {
     min-height: 100vh;
     margin: 0;
@@ -40,7 +45,10 @@ body {
 
 header {
     display: flex;
+
     justify-content: space-evenly;
+    align-items: center;
+    padding: 1vw;
 }
 
 .nav {
@@ -54,18 +62,21 @@ header {
     border: none;
     padding: .3vw .5vw .3vw .5vw;
     font-size: 1.2em;
-    background-color: rgba(0,0,0, 0.3);
+    background-color: rgba(255,255,255, 0.3);
+    color: white;
     border-radius: 10px;
 }
 
 .btn:hover {
-    background-color:whitesmoke;
+    background-color:black;
 }
 
 .siteName {
-    color: blue;
-    font-size: 1.4em;
+    color: white;
+    font-family: 'Licorice', 'sans-serif';
+    font-size: 2.4em;
     font-style: italic;
+    margin: 1vh 0 2vh 0;
 }
 
 .main {
@@ -80,6 +91,13 @@ header {
     justify-content: center;
     align-items: center;
     width: 60vw;
+}
+
+.restName {
+    font-family: 'Licorice', 'sans-serif';
+    font-size: 3.5em;
+    margin: 0;
+    padding: 2vw;
 }
 
 .restaurantDesc {
@@ -107,8 +125,8 @@ header {
     height: 300px;
     padding: 15px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.85);
-    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0,0,0, 0.85);
+    box-shadow: 0px 0px 20px 10px rgba(255,255,255, 0.4);
     transition: all ease .05s;
     display: flex;
     flex-direction: column;
@@ -118,7 +136,7 @@ header {
 }
 
 .dish:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(0,0,0, 1);
     transform: scale(1.01);
 }
 

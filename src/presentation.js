@@ -9,7 +9,7 @@ export default function renderPresentation() {
     mainDiv.classList.add('presDiv');
 
     const restaurantName = document.createElement('p');
-    restaurantName.classList.add('em');
+    restaurantName.classList.add('restName');
     restaurantName.innerText = 'Slow Food';
     mainDiv.appendChild(restaurantName);
 
@@ -28,7 +28,7 @@ export default function renderPresentation() {
     restaurantDesc.classList.add('restaurantDesc');
     restaurantDesc.innerText = 'Welcome to our restaurant! Here, you\'ll take ' + 
                                'all the time you need to eat and enjoy our dishes!' +
-                               ' As our name says, we\'re the exact opposite of your favorite fast-food!';
+                               ' As our name suggests, we\'re the exact opposite of your favorite fast-food!';
     
     mainDiv.appendChild(restaurantDesc);
 

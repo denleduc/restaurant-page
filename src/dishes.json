@@ -77,7 +77,7 @@
             "type": "other",
             "description": "A coffee from the best producers",
             "ingredients": [
-                "coffee"
+                "coffee", "water", "sugar"
             ]
         }
     ]
