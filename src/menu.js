@@ -24,6 +24,16 @@ export default function renderMenu() {
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menuContainer');
 
+    const mainDishesText = document.createElement('div');
+    mainDishesText.innerText = "Main dishes";
+    const dessertsText = document.createElement('div');
+    dessertsText.innerText = "Desserts";
+    const otherText = document.createElement('div');
+    otherText.innerText = "Others";
+    mainDishesText.classList.add('dishText');
+    dessertsText.classList.add('dishText');
+    otherText.classList.add('dishText');
+
     //Adding dishes from JSON to container
     const mainDishesContainer = document.createElement('div');
     mainDishesContainer.classList.add('mainDishes');
@@ -73,8 +83,11 @@ export default function renderMenu() {
         }
     });
 
+    menuContainer.appendChild(mainDishesText);
     menuContainer.appendChild(mainDishesContainer);
+    menuContainer.appendChild(dessertsText);
     menuContainer.appendChild(dessertsContainer);
+    menuContainer.appendChild(otherText);
     menuContainer.appendChild(otherContainer);
 
 

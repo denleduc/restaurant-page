@@ -8,11 +8,12 @@ header,
 footer,
 .presDiv,
 .txtContainer,
+.dishText,
 .mainDishes,
 .dessertsDishes,
 .otherDishes,
 .about {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     border-radius: 20px;
 }
 
@@ -194,5 +195,11 @@ footer {
 }
 
 .dishIngredients {
+    font-size: 0.9em;
+}
 
+.dishText {
+    padding: 2vw;
+    font-size: 1.2em;
+    font-weight: 400;
 }
