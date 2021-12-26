@@ -3,7 +3,7 @@ export default function renderHeader() {
 
     //Site name / logo
     const siteName = document.createElement('p');
-    siteName.innerText = 'SlowFood';
+    siteName.innerText = 'SloooowFooood';
     siteName.classList.add('siteName');
     container.appendChild(siteName);
 

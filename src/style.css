@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
-    border: 1px solid red;
     font-family: 'Cantarell';
 }
 
@@ -54,11 +53,13 @@ header {
 }
 
 .btn:hover {
-    color:whitesmoke;
+    background-color:whitesmoke;
 }
 
 .siteName {
     color: blue;
+    font-size: 1.4em;
+    font-style: italic;
 }
 
 .main {
@@ -68,6 +69,7 @@ header {
 }
 
 .presDiv {
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
