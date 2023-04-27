@@ -1,4 +1,4 @@
-import RestaurantImage from './restaurant_interior.jpg';
+import RestaurantImage from './res/restaurant_interior.jpg';
 
 export default function renderPresentation() {
     const container = document.createElement('div');

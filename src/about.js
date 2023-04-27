@@ -1,4 +1,4 @@
-import kitchenImg from './kitchen.jpg';
+import kitchenImg from './res/kitchen.jpg';
 
 export default function renderAbout() {
     const container = document.createElement('div');

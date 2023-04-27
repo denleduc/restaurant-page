@@ -4,7 +4,7 @@ export default function renderFooter() {
     //Well it's simply the copyright thing
     const copyrightText = document.createElement('p');
     copyrightText.classList.add('small');
-    copyrightText.innerText = 'Copyright © Denis L. 2021 - Credits in the about tab';
+    copyrightText.innerText = 'Copyright © Denis L. 2021 - 2023 - Credits in the about tab';
     container.appendChild(copyrightText);
     
     return container;

@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url(./background.jpg);
+    background: url(./res/background.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
