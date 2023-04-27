@@ -2,7 +2,7 @@ import dishes from './dishes.json';
 
 export default function renderMenu() {
     const container = document.createElement('div');
-    container.classList.add('menu', 'invisible');
+    container.classList.add('menu');
     
     //Top text
     const textContainer = document.createElement('div');

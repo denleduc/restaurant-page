@@ -2,7 +2,7 @@ import kitchenImg from './res/kitchen.jpg';
 
 export default function renderAbout() {
     const container = document.createElement('div');
-    container.classList.add('about', 'invisible');
+    container.classList.add('about');
 
     //Real about section
     const aboutContainer = document.createElement('div');

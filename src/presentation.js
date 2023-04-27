@@ -2,7 +2,7 @@ import RestaurantImage from './res/restaurant_interior.jpg';
 
 export default function renderPresentation() {
     const container = document.createElement('div');
-    container.classList.add('main', 'visible');
+    container.classList.add('main');
 
     //Div for restaurant name and photo
     const mainDiv = document.createElement('div');
