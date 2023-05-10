@@ -1,9 +1,9 @@
-export default function renderHeader() {
-    const container = document.createElement('header');
+export default function renderNav() {
+    const container = document.createElement('nav');
 
     //Site name / logo
     const siteName = document.createElement('p');
-    siteName.innerText = 'SloooowFooood';
+    siteName.innerText = 'SlowFood';
     siteName.classList.add('siteName');
     container.appendChild(siteName);
 

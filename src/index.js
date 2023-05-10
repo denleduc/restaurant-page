@@ -25,9 +25,6 @@ appendPage(renderPresentation());
 const menuBtn = document.querySelector('.menuBtn');
 const aboutBtn = document.querySelector('.aboutBtn');
 const presBtn = document.querySelector('.presBtn');
-const presTab = document.querySelector('.main');
-const aboutTab = document.querySelector('.about');
-const menuTab = document.querySelector('.menu');
 
 //Tab switching code
 presBtn.addEventListener('click', () => {
