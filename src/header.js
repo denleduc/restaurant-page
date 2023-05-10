@@ -1,5 +1,8 @@
+import './res/menu.css';
+
 export default function renderNav() {
     const container = document.createElement('nav');
+    container.classList.add('nav_background');
 
     //Site name / logo
     const siteName = document.createElement('p');

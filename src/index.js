@@ -16,9 +16,10 @@ function clearPage() {
 
 function appendPage(section) {
     page.appendChild(section);
-    page.appendChild(renderFooter());
+    //page.appendChild(renderFooter());
 }
 
+appendPage(renderPresentation());
 appendPage(renderPresentation());
 
 //Getting elements after they have been created

@@ -1,1 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#pageContainer {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
