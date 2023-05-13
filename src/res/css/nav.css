@@ -1,18 +1,27 @@
 nav {
     position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: .5rem 1rem;
-    top: 0;
-    width: 100%;
+    top: 50%;
+    right: 0;
     box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
 }
 
 .siteName {
     font-family: 'Licorice', cursive;
     font-size: 2rem;
     margin: 0;
+    color: white;
 }
 
 .nav_background {

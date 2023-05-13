@@ -1,10 +1,10 @@
 const page = document.querySelector('#pageContainer');
-import renderHeader from "./header";
+import renderHeader from "./nav";
 import renderPresentation from "./presentation";
 import renderMenu from "./menu";
 import renderAbout from "./about";
 import renderFooter from "./footer";
-import './res/style.css';
+import './res/css/style.css';
 
 document.body.prepend(renderHeader());
 
@@ -21,24 +21,9 @@ function appendPage(section) {
 
 appendPage(renderPresentation());
 appendPage(renderPresentation());
+appendPage(renderMenu());
 
 //Getting elements after they have been created
 const menuBtn = document.querySelector('.menuBtn');
 const aboutBtn = document.querySelector('.aboutBtn');
 const presBtn = document.querySelector('.presBtn');
-
-//Tab switching code
-presBtn.addEventListener('click', () => {
-    clearPage();
-    appendPage(renderPresentation());
-});
-
-menuBtn.addEventListener('click', () => {
-    clearPage();
-    appendPage(renderMenu());
-});
-
-aboutBtn.addEventListener('click', () => {
-    clearPage();
-    appendPage(renderAbout());
-});

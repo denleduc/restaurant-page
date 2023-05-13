@@ -1,8 +1,9 @@
-import './res/presentation.css';
+import './res/css/presentation.css';
 
 export default function renderPresentation() {
-    const container = document.createElement('div');
+    const container = document.createElement('main');
     container.classList.add('header');
+    container.id = "header";
 
     //Div for restaurant name and photo
     const mainDiv = document.createElement('div');

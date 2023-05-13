@@ -1,8 +1,10 @@
 import dishes from './dishes.json';
+import './res/css/menu.css';
 
 export default function renderMenu() {
     const container = document.createElement('div');
     container.classList.add('menu');
+    container.id = "menu";
     
     //Top text
     const textContainer = document.createElement('div');
@@ -42,32 +44,36 @@ export default function renderMenu() {
     const otherContainer = document.createElement('div');
     otherContainer.classList.add('otherDishes');
 
-    dishes["Dishes"].forEach(dish => {
+    //dishes["Dishes"].forEach(dish => {});
+    for (let i = 0; i < dishes["Dishes"].length; i++) {
         const dishDiv = document.createElement('div');
         dishDiv.classList.add('dish');
 
         //Dish name
         const dishName = document.createElement('p');
         dishName.classList.add('dishName');
-        dishName.innerText = dish.name;
+        dishName.innerText = dishes["Dishes"][i].name;
         dishDiv.appendChild(dishName);
 
         //Dish description
         const dishDesc = document.createElement('p');
         dishDesc.classList.add('dishDesc');
-        dishDesc.innerText = dish.description;
+        dishDesc.innerText = dishes["Dishes"][i].description;
         dishDiv.appendChild(dishDesc);
 
         //Ingredients
         const dishIngredients = document.createElement('p');
         dishIngredients.classList.add('dishIngredients');
         dishIngredients.innerText = 'Ingredients: ';
-        dish.ingredients.forEach(ingredient => {
-            dishIngredients.innerText += ingredient + ' | ';
-        });
+        for (let j = 0; j < dishes["Dishes"][i].ingredients.length; j++) {
+            dishIngredients.innerText += dishes["Dishes"][i].ingredients[j];
+            if (j !== dishes["Dishes"][i].ingredients.length - 1) {
+                dishIngredients.innerText += ' | '
+            }
+        };
         dishDiv.appendChild(dishIngredients);
 
-        switch (dish.type) {
+        switch (dishes["Dishes"][i].type) {
             case 'main':
                 mainDishesContainer.appendChild(dishDiv);
                 break;
@@ -81,7 +87,7 @@ export default function renderMenu() {
                 otherContainer.appendChild(dishDiv);
                 break;
         }
-    });
+    }
 
     menuContainer.appendChild(mainDishesText);
     menuContainer.appendChild(mainDishesContainer);

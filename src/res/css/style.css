@@ -4,14 +4,20 @@ html,
 body {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     height: 100vh;
     overflow: hidden;
 }
 
 #pageContainer {
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     height: 100vh;
     overflow-y: scroll;
+}
+
+@media screen and (hover: none) {
+    #pageContainer {
+        scroll-snap-type: none;
+    }    
 }
 
