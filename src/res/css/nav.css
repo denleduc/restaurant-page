@@ -12,19 +12,42 @@ nav {
     gap: .5rem;
 }
 
+.nav > * {
+    transition: .3s ease all;
+    text-align: right;
+}
+
 .link {
     text-decoration: none;
     color: black;
 }
 
-.siteName {
-    font-family: 'Licorice', cursive;
-    font-size: 2rem;
-    margin: 0;
-    color: white;
+.nav_background {
+    background-color: rgba(255,255,255,0.65);
+    backdrop-filter: blur(5px);
 }
 
-.nav_background {
-    background-color: rgba(255,255,255,0.25);
-    backdrop-filter: blur(5px);
+.active {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media screen and (hover: none) {
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    nav {
+        top: auto;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .nav {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
 }

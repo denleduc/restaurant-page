@@ -16,10 +16,8 @@ function clearPage() {
 
 function appendPage(section) {
     page.appendChild(section);
-    //page.appendChild(renderFooter());
 }
 
-appendPage(renderPresentation());
 appendPage(renderPresentation());
 appendPage(renderMenu());
 
@@ -27,3 +25,35 @@ appendPage(renderMenu());
 const menuBtn = document.querySelector('.menuBtn');
 const aboutBtn = document.querySelector('.aboutBtn');
 const presBtn = document.querySelector('.presBtn');
+
+function removeActiveClass() {
+    menuBtn.classList.remove('active');
+    aboutBtn.classList.remove('active');
+    presBtn.classList.remove('active');
+}
+
+let observerOptions = {
+    root: document.querySelector('#pageContainer'),
+    rootMargin: "0px",
+    threshold: 0.95
+};
+
+let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting === false) {
+            
+        }
+        else {
+            removeActiveClass();
+            if (entry.target.classList.contains('menu') === true) {
+                menuBtn.classList.add('active');
+            }
+            if (entry.target.classList.contains('header') === true) {
+                presBtn.classList.add('active');
+            }
+        }
+    });
+}, observerOptions);
+
+observer.observe(document.querySelector('.header'));
+observer.observe(document.querySelector('.menu'));

@@ -15,11 +15,6 @@ export default function renderMenu() {
     topText.innerText = 'Menu';
     textContainer.appendChild(topText);
 
-    const subtitle = document.createElement('p');
-    subtitle.classList.add('subtText');
-    subtitle.innerText = 'Take a look at the dishes you can order in our restaurant!';
-    textContainer.appendChild(subtitle);
-
     container.appendChild(textContainer);
 
     //Actual menu
@@ -50,7 +45,7 @@ export default function renderMenu() {
         dishDiv.classList.add('dish');
 
         //Dish name
-        const dishName = document.createElement('p');
+        const dishName = document.createElement('h3');
         dishName.classList.add('dishName');
         dishName.innerText = dishes["Dishes"][i].name;
         dishDiv.appendChild(dishName);

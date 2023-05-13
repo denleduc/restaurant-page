@@ -5,33 +5,21 @@ export default function renderPresentation() {
     container.classList.add('header');
     container.id = "header";
 
-    //Div for restaurant name and photo
-    const mainDiv = document.createElement('div');
-    mainDiv.classList.add('presDiv');
-
-    const restaurantName = document.createElement('p');
+    const restaurantName = document.createElement('h1');
     restaurantName.classList.add('restName');
     restaurantName.innerText = 'Slow Food';
-    mainDiv.appendChild(restaurantName);
+    container.appendChild(restaurantName);
 
-    const imgDesc = document.createElement('p');
-    imgDesc.innerText = 'Our interior (well, almost)';
-    imgDesc.classList.add('small');
-    mainDiv.appendChild(imgDesc);
-
-    const restaurantDesc = document.createElement('p');
+    const restaurantDesc = document.createElement('h2');
     restaurantDesc.classList.add('restaurantDesc');
-    restaurantDesc.innerText = 'Welcome to our restaurant! Here, you\'ll take ' + 
-                               'all the time you need to eat and enjoy our dishes!' +
-                               ' As our name suggests, we\'re the exact opposite of your favorite fast-food!';
+    restaurantDesc.innerText = 'Bienvenue au SlowFood!';
     
-    mainDiv.appendChild(restaurantDesc);
+    container.appendChild(restaurantDesc);
 
     const exploreText = document.createElement('p');
     exploreText.classList.add('restaurantDesc');
     exploreText.innerText = 'Feel free to explore our website to discover our dishes, our history and our location!';
-    mainDiv.appendChild(exploreText);
+    container.appendChild(exploreText);
 
-    container.appendChild(mainDiv);
     return container;
 }
