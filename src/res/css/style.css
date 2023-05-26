@@ -6,13 +6,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden;
     font-family: 'Inter', sans-serif;
-}
-
-#pageContainer {
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    height: 100vh;
-    overflow-y: scroll;
 }

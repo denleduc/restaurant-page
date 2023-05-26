@@ -7,13 +7,6 @@ import renderFooter from "./footer";
 import './res/css/style.css';
 
 document.body.prepend(renderHeader());
-
-function clearPage() {
-    while (page.firstChild) {
-        page.removeChild(page.firstChild);
-    }
-}
-
 function appendPage(section) {
     page.appendChild(section);
 }
@@ -33,9 +26,9 @@ function removeActiveClass() {
 }
 
 let observerOptions = {
-    root: document.querySelector('#pageContainer'),
+    root: null,
     rootMargin: "0px",
-    threshold: 0.95
+    threshold: 0.51
 };
 
 let observer = new IntersectionObserver((entries, observer) => {

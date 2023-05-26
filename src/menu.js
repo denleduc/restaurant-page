@@ -39,7 +39,6 @@ export default function renderMenu() {
     const otherContainer = document.createElement('div');
     otherContainer.classList.add('otherDishes');
 
-    //dishes["Dishes"].forEach(dish => {});
     for (let i = 0; i < dishes["Dishes"].length; i++) {
         const dishDiv = document.createElement('div');
         dishDiv.classList.add('dish');
