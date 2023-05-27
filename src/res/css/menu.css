@@ -1,6 +1,10 @@
 .menu {
-    height: 100vh;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1.5rem;
+}
+
+.menuHeading {
+    font-family: 'Aoboshi One', serif;
+    font-size: 2rem;
 }
 
 .dish {
@@ -16,6 +20,10 @@
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+.dishName {
+    font-family: 'Aoboshi One', 'Inter', sans-serif;
 }
 
 .dishDesc {

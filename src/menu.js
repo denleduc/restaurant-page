@@ -7,15 +7,10 @@ export default function renderMenu() {
     container.id = "menu";
     
     //Top text
-    const textContainer = document.createElement('div');
-    textContainer.classList.add('txtContainer');
-
-    const topText = document.createElement('p');
-    topText.classList.add('topText');
+    const topText = document.createElement('h2');
+    topText.classList.add('menuHeading');
     topText.innerText = 'Menu';
-    textContainer.appendChild(topText);
-
-    container.appendChild(textContainer);
+    container.appendChild(topText);
 
     //Actual menu
     const menuContainer = document.createElement('div');

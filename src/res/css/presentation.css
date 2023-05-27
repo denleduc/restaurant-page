@@ -20,3 +20,7 @@
     margin: 0;
     text-align: center;
 }
+
+h2.restaurantDesc {
+    font-family: 'Playfair', serif;
+}
